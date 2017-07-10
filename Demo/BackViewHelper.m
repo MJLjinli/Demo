@@ -27,9 +27,10 @@
 {
     if (!_backView) {
         _backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-        
         _backView.backgroundColor = [UIColor blackColor];
         _backView.alpha = 0.5;
+        UITapGestureRecognizer *tapGus = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(hidenView:)];
+        [_backView addGestureRecognizer:tapGus];
     }
     return _backView;
 }
@@ -39,9 +40,15 @@
     if (!_blurView) {
         _blurView = [[FXBlurView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
         _blurView.blurRadius = 40;
+        UITapGestureRecognizer *tapGus = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(hidenView:)];
+        [_blurView addGestureRecognizer:tapGus];
     }
     return _blurView;
 }
 
-
+- (void)hidenView:(UITapGestureRecognizer *)tapSender
+{
+    [_backView removeFromSuperview];
+    [_blurView removeFromSuperview];
+}
 @end
