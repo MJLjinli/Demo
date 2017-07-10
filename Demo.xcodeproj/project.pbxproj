@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014BF7351F1319A200132EA9 /* PublucBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 014BF7341F1319A200132EA9 /* PublucBackView.m */; };
+		014BF7381F131C1400132EA9 /* BackViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 014BF7371F131C1400132EA9 /* BackViewHelper.m */; };
+		014BF73B1F131F4300132EA9 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 014BF73A1F131F4300132EA9 /* FXBlurView.m */; };
 		546BDB141F0F566000F2FDC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546BDB131F0F566000F2FDC9 /* main.m */; };
 		546BDB171F0F566000F2FDC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546BDB161F0F566000F2FDC9 /* AppDelegate.m */; };
 		546BDB1A1F0F566000F2FDC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546BDB191F0F566000F2FDC9 /* ViewController.m */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		014BF7331F1319A200132EA9 /* PublucBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublucBackView.h; sourceTree = "<group>"; };
+		014BF7341F1319A200132EA9 /* PublucBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublucBackView.m; sourceTree = "<group>"; };
+		014BF7361F131C1400132EA9 /* BackViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackViewHelper.h; sourceTree = "<group>"; };
+		014BF7371F131C1400132EA9 /* BackViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackViewHelper.m; sourceTree = "<group>"; };
+		014BF7391F131F4300132EA9 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		014BF73A1F131F4300132EA9 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		546BDB0F1F0F566000F2FDC9 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546BDB131F0F566000F2FDC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		546BDB151F0F566000F2FDC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,7 +71,13 @@
 				546BDB161F0F566000F2FDC9 /* AppDelegate.m */,
 				546BDB181F0F566000F2FDC9 /* ViewController.h */,
 				546BDB191F0F566000F2FDC9 /* ViewController.m */,
+				014BF7331F1319A200132EA9 /* PublucBackView.h */,
+				014BF7341F1319A200132EA9 /* PublucBackView.m */,
+				014BF7361F131C1400132EA9 /* BackViewHelper.h */,
+				014BF7371F131C1400132EA9 /* BackViewHelper.m */,
 				546BDB1B1F0F566000F2FDC9 /* Main.storyboard */,
+				014BF7391F131F4300132EA9 /* FXBlurView.h */,
+				014BF73A1F131F4300132EA9 /* FXBlurView.m */,
 				546BDB1E1F0F566000F2FDC9 /* Assets.xcassets */,
 				546BDB201F0F566000F2FDC9 /* LaunchScreen.storyboard */,
 				546BDB231F0F566000F2FDC9 /* Info.plist */,
@@ -110,7 +125,7 @@
 				TargetAttributes = {
 					546BDB0E1F0F566000F2FDC9 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = XL7B7ZW6KC;
+						DevelopmentTeam = PHWVAXF5Q9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,7 +168,10 @@
 			files = (
 				546BDB1A1F0F566000F2FDC9 /* ViewController.m in Sources */,
 				546BDB171F0F566000F2FDC9 /* AppDelegate.m in Sources */,
+				014BF7381F131C1400132EA9 /* BackViewHelper.m in Sources */,
+				014BF7351F1319A200132EA9 /* PublucBackView.m in Sources */,
 				546BDB141F0F566000F2FDC9 /* main.m in Sources */,
+				014BF73B1F131F4300132EA9 /* FXBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XL7B7ZW6KC;
+				DEVELOPMENT_TEAM = PHWVAXF5Q9;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Custom.Demo;
@@ -283,7 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XL7B7ZW6KC;
+				DEVELOPMENT_TEAM = PHWVAXF5Q9;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Custom.Demo;
@@ -310,6 +328,7 @@
 				546BDB281F0F566000F2FDC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

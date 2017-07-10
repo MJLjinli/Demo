@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "BackViewHelper.h"
 @interface ViewController ()
 
 @end
@@ -16,9 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(20, 50, 100, 50);
+    btn.backgroundColor = [UIColor orangeColor];
+    [btn setTitle:@"点一点" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+ 
 }
 
+
+- (void)btnClick:(UIButton *)sender
+{
+    [[UIApplication sharedApplication].keyWindow addSubview:[BackViewHelper shareInstacne].blurView];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[BackViewHelper shareInstacne].blurView removeFromSuperview];
+    });
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
